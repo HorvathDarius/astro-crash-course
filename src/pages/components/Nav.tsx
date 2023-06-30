@@ -94,7 +94,7 @@ export default function Nav() {
         <motion.div
           animate={{ opacity: 1, x: 0 }} // And it will animate to opacity 1, visible and position x:0 which is the initiall position of the div
           initial={{ opacity: 0, x: 25 }} // It will start at opacity 0, invisible and 25px to the right, a little offscreen
-          className="fixed bg-white bottom-0 left-0 w-full h-screen flex items-center justify-center"
+          className="fixed bg-white z-30 bottom-0 left-0 w-full h-screen flex items-center justify-center"
         >
           <motion.div
             variants={navMotion}
